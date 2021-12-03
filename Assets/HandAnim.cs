@@ -38,7 +38,7 @@ public class HandAnim : MonoBehaviour
         for (int i = 0; i < m_colliders.Length; ++i) {
             Collider collider = m_colliders[i];
             // collider.transform.localScale = new Vector3(COLLIDER_SCALE_MIN, COLLIDER_SCALE_MIN, COLLIDER_SCALE_MIN);
-            collider.enabled = true;
+            //collider.enabled = true; Jon note: maybe enable colliders when you aren't grabbing something
         }
         m_animLayerIndexPoint = m_animator.GetLayerIndex(ANIM_LAYER_NAME_POINT);
         m_animLayerIndexThumb = m_animator.GetLayerIndex(ANIM_LAYER_NAME_THUMB);
