@@ -8,17 +8,17 @@ public class VisionTriggerCameraController : MonoBehaviour
 
     List<GameObject> visionTriggers;
 
-    float viewAngle = 60f;
+    float viewAngle = 50f;
 
     void Start() {
         cam = GetComponent<Camera>();
 
         visionTriggers = new List<GameObject>();
-        foreach (GameObject g in GameObject.FindGameObjectsWithTag("VisionTrigger"))
-            visionTriggers.Add(g);
+        foreach (VisionTrigger g in GameObject.FindObjectsOfType<VisionTrigger>(true))
+            visionTriggers.Add(g.gameObject);
 
         viewAngle = cam.fieldOfView;
-        InvokeRepeating("findTriggers", 0, .25f);
+        InvokeRepeating("findTriggers", 0, .125f);
     }
 
     void findTriggers() {
