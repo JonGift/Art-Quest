@@ -11,6 +11,7 @@ public class FadeToBlackController : MonoBehaviour
     bool canFade = true;
 
     void Start() {
+        //squareImage = Camera.main.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         squareImage = square.GetComponent<Image>();
     }
 

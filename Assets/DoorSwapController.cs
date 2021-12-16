@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DoorSwapController : MonoBehaviour
 {
-    public List<GameObject> attachedObjects;
-    public List<GameObject> interruptingObjects;
+    public List<GameObject> attachedObjects; // Enables all objects here
+    public List<GameObject> interruptingObjects; // Disables all objects here
+    public List<GameObject> randomObjects; // Enables one random object
 
     public void swapAfterDelay() {
         StartCoroutine(swapAfterDelayEnum());
@@ -20,6 +21,12 @@ public class DoorSwapController : MonoBehaviour
     public void EnableAttachedObjects() {
         foreach (GameObject g in attachedObjects)
             g.SetActive(true);
+
+        if(randomObjects.Count > 0) {
+            int i = Random.Range(0, randomObjects.Count);
+            randomObjects[i].SetActive(true);
+        }
+        
     }
 
     public void DisableInterruptingObjects() {

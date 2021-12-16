@@ -28,9 +28,11 @@ public class VisionTriggerCameraController : MonoBehaviour
             if (Vector3.Angle(direction, transform.forward) < viewAngle) {
                 Physics.Raycast(new Vector3(transform.position.x, transform.position.y, transform.position.z), (g.transform.position - transform.position), out hit);
                 Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, transform.position.z), (g.transform.position - transform.position));
-                if (hit.transform.tag == "VisionTrigger") {
-                    hit.collider.GetComponent<VisionTrigger>().EnableAttachedObjects();
-                    hit.collider.GetComponent<VisionTrigger>().DisableInterruptingObjects();
+                if (hit.transform) {
+                    if (hit.transform.tag == "VisionTrigger") {
+                        hit.collider.GetComponent<VisionTrigger>().EnableAttachedObjects();
+                        hit.collider.GetComponent<VisionTrigger>().DisableInterruptingObjects();
+                    }
                 }
             }
         }
