@@ -22,9 +22,12 @@ public class DoorSwapController : MonoBehaviour
         foreach (GameObject g in attachedObjects)
             g.SetActive(true);
 
-        if(randomObjects.Count > 0) {
-            int i = Random.Range(0, randomObjects.Count);
-            randomObjects[i].SetActive(true);
+        if (randomObjects != null) {
+            if (randomObjects.Count > 0) {
+                int i = Random.Range(0, randomObjects.Count);
+                if(randomObjects[i] != null)
+                    randomObjects[i].SetActive(true);
+            }
         }
         
     }
