@@ -7,13 +7,19 @@ public class DoorSwapController : MonoBehaviour
     public List<GameObject> attachedObjects; // Enables all objects here
     public List<GameObject> interruptingObjects; // Disables all objects here
     public List<GameObject> randomObjects; // Enables one random object
+    FadeToBlackController fadeCheck;
+
+    private void Start() {
+        fadeCheck = FindObjectOfType<FadeToBlackController>();
+    }
 
     public void swapAfterDelay() {
-        StartCoroutine(swapAfterDelayEnum());
+        if(!fadeCheck.getCanFade())
+            StartCoroutine(swapAfterDelayEnum());
     }
 
     public IEnumerator swapAfterDelayEnum() {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         DisableInterruptingObjects();
         EnableAttachedObjects();
     }

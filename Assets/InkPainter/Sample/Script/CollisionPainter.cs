@@ -11,11 +11,15 @@ namespace Es.InkPainter.Sample
 		[SerializeField]
 		private int wait = 3;
 
+		public bool canPaint = false;
+
 		private int waitCount;
+		Rigidbody rb;
 
 		public void Awake()
 		{
 			GetComponent<MeshRenderer>().material.color = brush.Color;
+			rb = GetComponent<Rigidbody>();
 		}
 
 		public void FixedUpdate()
@@ -25,8 +29,12 @@ namespace Es.InkPainter.Sample
 
 		public void OnCollisionStay(Collision collision)
 		{
-			if(waitCount < wait)
+			if(canPaint)
+				rb.freezeRotation = true;
+
+			if(waitCount < wait || !canPaint)
 				return;
+
 			waitCount = 0;
 
 			foreach(var p in collision.contacts)
@@ -35,6 +43,14 @@ namespace Es.InkPainter.Sample
 				if(canvas != null)
 					canvas.Paint(brush, p.point);
 			}
+		}
+
+        public void OnCollisionExit(Collision collision) {
+			rb.freezeRotation = false;
+        }
+
+        public void CanPaint(bool tf) {
+			canPaint = tf;
 		}
 	}
 }

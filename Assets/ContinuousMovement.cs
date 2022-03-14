@@ -11,6 +11,7 @@ public class ContinuousMovement : MonoBehaviour
     private CharacterController character;
     public LayerMask groundLayer;
     private XRRig rig;
+    public GameObject headset;
 
     public float additionalHeight = .2f;
 
@@ -18,12 +19,18 @@ public class ContinuousMovement : MonoBehaviour
     public float gravity = -9.81f;
     private float fallingSpeed;
 
+    bool secondaryButtonLeft;
 
     // Start is called before the first frame update
     void Start()
     {
         character = GetComponent<CharacterController>();
         rig = GetComponent<XRRig>();
+        Reposition();
+    }
+
+    void LateStart() {
+
     }
 
     // Update is called once per frame
@@ -31,6 +38,7 @@ public class ContinuousMovement : MonoBehaviour
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+        device.TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryButtonLeft);
     }
 
     private void FixedUpdate() {
@@ -51,6 +59,8 @@ public class ContinuousMovement : MonoBehaviour
             fallingSpeed += gravity * Time.fixedDeltaTime;
         
         character.Move(Vector3.up * fallingSpeed * Time.fixedDeltaTime);
+        if (secondaryButtonLeft)
+            Reposition();
     }
 
     bool CheckIfGrounded() {
@@ -64,5 +74,10 @@ public class ContinuousMovement : MonoBehaviour
         character.height = rig.cameraInRigSpaceHeight + additionalHeight;
         Vector3 capsuleCenter = transform.InverseTransformPoint(rig.cameraGameObject.transform.position);
         character.center = new Vector3(capsuleCenter.x, character.height / 2 + character.skinWidth, capsuleCenter.z);
+    }
+
+
+    public void Reposition() {
+        transform.position = new Vector3(transform.position.x - headset.transform.position.x, transform.position.y, transform.position.z - headset.transform.position.z);
     }
 }
