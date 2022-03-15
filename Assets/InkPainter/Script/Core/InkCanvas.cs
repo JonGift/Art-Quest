@@ -1161,7 +1161,7 @@ namespace Es.InkPainter
 				string path = EditorUtility.SaveFilePanel("Save to png", Application.dataPath, textureName + "_painted.png", "png");
 				if(path.Length != 0)
 				{
-					var newTex = new Texture2D(renderTexture.width, renderTexture.height);
+					var newTex = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB4444, false, false);
 					RenderTexture.active = renderTexture;
 					newTex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
 					newTex.Apply();
