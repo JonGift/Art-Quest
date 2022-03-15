@@ -14,7 +14,7 @@ public class DoorSwapController : MonoBehaviour
     }
 
     public void swapAfterDelay() {
-        if(!fadeCheck.getCanFade())
+        if(!fadeCheck.getCanFade() && fadeCheck.canOpenDoor())
             StartCoroutine(swapAfterDelayEnum());
     }
 

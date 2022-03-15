@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class FadeToBlackController : MonoBehaviour
 {
@@ -12,21 +13,31 @@ public class FadeToBlackController : MonoBehaviour
     bool fadingIn = false;
 
     public GameObject XRRig;
-
+    XRController leftHand;
+    XRController rightHand;
 
     void Start() {
         //squareImage = Camera.main.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         squareImage = square.GetComponent<Image>();
         StartCoroutine(returnFromBlackAtStart());
+        leftHand = XRRig.transform.GetChild(0).GetChild(1).GetComponent<XRController>();
+        rightHand = XRRig.transform.GetChild(0).GetChild(2).GetComponent<XRController>();
     }
 
     public bool getCanFade() {
         return fadingIn;
     }
 
+    public bool canOpenDoor() {
+        return XRRig.GetComponent<ContinuousMovement>().GetEitherHandEmpty();
+    }
+
     // Update is called once per frame
     public void callFade() {
-        if (!canFade) return;
+        if (!canOpenDoor()) return;
+
+        leftHand.enableInputActions = false;
+        rightHand.enableInputActions = false;
 
         canFade = false;
         StartCoroutine(fadeToBlack());
@@ -55,6 +66,8 @@ public class FadeToBlackController : MonoBehaviour
     }
 
     public IEnumerator returnFromBlack() {
+        leftHand.enableInputActions = true;
+        rightHand.enableInputActions = true;
         fadingIn = true;
         Color color = squareImage.color;
         float fadeAmount;

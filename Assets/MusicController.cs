@@ -19,7 +19,10 @@ public class MusicController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!sources[0].isPlaying) {
+            clipIndex = Random.Range(0, clips.Count);
+            playSong();
+        }
     }
 
     void playSong() {

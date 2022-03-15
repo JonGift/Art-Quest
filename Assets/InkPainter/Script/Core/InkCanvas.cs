@@ -260,21 +260,29 @@ namespace Es.InkPainter
 
 		private void Awake()
 		{
-			if(OnCanvasAttached != null)
+
+		}
+
+		private void Start()
+		{
+			Invoke("LateStart", 1f);
+		}
+
+		void LateStart() {
+			if (OnCanvasAttached != null)
 				OnCanvasAttached(this);
 			InitPropertyID();
 			SetMaterial();
 			SetTexture();
 			MeshDataCache();
-		}
 
-		private void Start()
-		{
-			if(OnInitializedStart != null)
+
+			if (OnInitializedStart != null)
 				OnInitializedStart(this);
 			SetRenderTexture();
-			if(OnInitializedAfter != null)
+			if (OnInitializedAfter != null)
 				OnInitializedAfter(this);
+
 		}
 
 		private void OnDestroy()
@@ -1026,7 +1034,7 @@ namespace Es.InkPainter
 					for(int i = instance.paintSet.Count; i < materials.Length; ++i)
 						instance.paintSet.Add(new PaintSet
 						{
-							mainTextureName = "_MainTex",
+							mainTextureName = "_BaseMap",
 							normalTextureName = "_BumpMap",
 							heightTextureName = "_ParallaxMap",
 							useMainPaint = true,
@@ -1063,8 +1071,11 @@ namespace Es.InkPainter
 
 							var paintSet = instance.paintSet[i];
 
-							if(paintSet.paintMainTexture != null && GUILayout.Button("Save main texture"))
+							if(paintSet.paintMainTexture != null && GUILayout.Button("Save main texture")) {
+								Debug.Log(paintSet.mainTexture.name);
+								Debug.Log(paintSet.paintMainTexture.name);
 								SaveRenderTextureToPNG(paintSet.mainTexture != null ? paintSet.mainTexture.name : "main_texture", paintSet.paintMainTexture);
+							}
 
 							if(instance.paintSet[i].paintNormalTexture != null && GUILayout.Button("Save normal texture"))
 								//TODO:https://github.com/EsProgram/InkPainter/issues/13

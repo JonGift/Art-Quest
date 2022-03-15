@@ -21,6 +21,9 @@ public class ContinuousMovement : MonoBehaviour
 
     bool secondaryButtonLeft;
 
+    public bool rightHandEmpty = true;
+    public bool leftHandEmpty = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,5 +82,17 @@ public class ContinuousMovement : MonoBehaviour
 
     public void Reposition() {
         transform.position = new Vector3(transform.position.x - headset.transform.position.x, transform.position.y, transform.position.z - headset.transform.position.z);
+    }
+
+    public void SetRightHandEmpty(bool tf) {
+        rightHandEmpty = tf;
+    }
+
+    public void SetLeftHandEmpty(bool tf) {
+        leftHandEmpty = tf;
+    }
+
+    public bool GetEitherHandEmpty() {
+        return leftHandEmpty || rightHandEmpty;
     }
 }
