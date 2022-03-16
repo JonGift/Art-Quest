@@ -4,7 +4,6 @@ using UnityEngine;
 using Es.InkPainter;
 using System.IO;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 
 public class TestSaver : MonoBehaviour
 {
@@ -46,7 +45,7 @@ public class TestSaver : MonoBehaviour
         if (!save)
             return;
         //string path = EditorUtility.SaveFilePanel("Save to png", Application.dataPath, textureName + "_painted.png", "png");
-        string path = Application.dataPath + "/wowwwasdf.png";
+       /* string path = Application.dataPath + "/wowwwasdf.png";
         if (path.Length != 0) {
             RenderTexture renderTexture = inkCanvas.GetPaintMainTexture(matSelf.name);
             //RenderTexture renderTexture = GetComponent<Renderer>().materials[0].mainTexture;
@@ -62,7 +61,7 @@ public class TestSaver : MonoBehaviour
             }
 
             Debug.Log(path);
-        }
+        }*/
     }
 
 }
