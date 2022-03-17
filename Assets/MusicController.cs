@@ -9,6 +9,11 @@ public class MusicController : MonoBehaviour
 
     public int clipIndex;
 
+    public HingeJoint joint;
+    bool grabbingJoint = false;
+    float baseVolume = 0.01f;
+    bool shouldPlay = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +24,21 @@ public class MusicController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!sources[0].isPlaying) {
+        if (shouldPlay && !sources[0].isPlaying) {
             clipIndex = Random.Range(0, clips.Count);
             playSong();
         }
+        if (grabbingJoint) {
+            foreach(AudioSource source in sources) {
+                source.volume = baseVolume * ((-joint.angle + 159) / 100);
+            }
+        }
+    }
+
+    public void setShouldPlay(bool tf) => shouldPlay = tf;
+
+    public void setGrabbing(bool tf) {
+        grabbingJoint = tf;
     }
 
     void playSong() {

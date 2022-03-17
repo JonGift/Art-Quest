@@ -32,10 +32,6 @@ public class ContinuousMovement : MonoBehaviour
         Reposition();
     }
 
-    void LateStart() {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -46,8 +42,6 @@ public class ContinuousMovement : MonoBehaviour
 
     private void FixedUpdate() {
         CapsuleFollowHeadset();
-
-
 
         Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
@@ -78,7 +72,6 @@ public class ContinuousMovement : MonoBehaviour
         Vector3 capsuleCenter = transform.InverseTransformPoint(rig.cameraGameObject.transform.position);
         character.center = new Vector3(capsuleCenter.x, character.height / 2 + character.skinWidth, capsuleCenter.z);
     }
-
 
     public void Reposition() {
         transform.position = new Vector3(transform.position.x - headset.transform.position.x, transform.position.y, transform.position.z - headset.transform.position.z);

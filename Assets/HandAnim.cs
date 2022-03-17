@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.Oculus;
 using TMPro; // Add the TextMesh Pro namespace to access the various functions.
 using System.Linq;
 
@@ -80,22 +81,24 @@ public class HandAnim : MonoBehaviour
 
             m_animator.SetFloat("Pinch", trigger_state);
         }
-        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.indexTouch, out float triggerCapTarget)) {
-            float triggerCap_state_delta = triggerCapTarget - triggerCap_state;
+        if (controller.inputDevice.TryGetFeatureValue(OculusUsages.indexTouch, out bool triggerCapTarget)) {
+            float triggerCap_state_delta = triggerCapTarget ? 1 : 0;
+            //float triggerCap_state_delta = triggerCapTarget - triggerCap_state;
             if (triggerCap_state_delta > 0f) {
-                triggerCap_state = Mathf.Clamp(triggerCap_state + 1 / anim_frames, 0f, triggerCapTarget);
+                triggerCap_state = Mathf.Clamp(triggerCap_state + 1 / anim_frames, 0f, triggerCap_state_delta);
             } else if (triggerCap_state_delta < 0f) {
-                triggerCap_state = Mathf.Clamp(triggerCap_state - 1 / anim_frames, triggerCapTarget, 1f);
-            } else { triggerCap_state = triggerCapTarget; }
+                triggerCap_state = Mathf.Clamp(triggerCap_state - 1 / anim_frames, triggerCap_state_delta, 1f);
+            } else { triggerCap_state = triggerCap_state_delta; }
             m_animator.SetLayerWeight(m_animLayerIndexPoint, 1f - triggerCap_state);
         }
-        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.thumbTouch, out float thumbCapTarget)) {
-            float thumbCap_state_delta = thumbCapTarget - thumbCap_state;
+        if (controller.inputDevice.TryGetFeatureValue(OculusUsages.thumbTouch, out bool thumbCapTarget)) {
+            float thumbCap_state_delta = thumbCapTarget ? 1 : 0;
+            //float thumbCap_state_delta = thumbCapTarget - thumbCap_state;
             if (thumbCap_state_delta > 0f) {
-                thumbCap_state = Mathf.Clamp(thumbCap_state + 1 / anim_frames, 0f, thumbCapTarget);
+                thumbCap_state = Mathf.Clamp(thumbCap_state + 1 / anim_frames, 0f, thumbCap_state_delta);
             } else if (thumbCap_state_delta < 0f) {
-                thumbCap_state = Mathf.Clamp(thumbCap_state - 1 / anim_frames, thumbCapTarget, 1f);
-            } else { thumbCap_state = thumbCapTarget; }
+                thumbCap_state = Mathf.Clamp(thumbCap_state - 1 / anim_frames, thumbCap_state_delta, 1f);
+            } else { thumbCap_state = thumbCap_state_delta; }
             m_animator.SetLayerWeight(m_animLayerIndexThumb, 1f - thumbCap_state);
         }
 
