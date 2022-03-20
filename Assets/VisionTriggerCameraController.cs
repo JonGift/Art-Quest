@@ -10,7 +10,7 @@ public class VisionTriggerCameraController : MonoBehaviour
 
     float viewAngle = 50f;
 
-    void Start() {
+    void OnLevelWasLoaded() {
         cam = GetComponent<Camera>();
 
         visionTriggers = new List<GameObject>();
