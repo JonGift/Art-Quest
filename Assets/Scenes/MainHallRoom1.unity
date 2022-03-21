@@ -8630,6 +8630,10 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: -3841976549707008140, guid: 337ba27e4c0ed4ed998183c490458287, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3841976549707008140, guid: 337ba27e4c0ed4ed998183c490458287, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
@@ -15429,6 +15433,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7084585370732599308, guid: 11a3e1caf31b84a108805eae3085468f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7084585370732599308, guid: 11a3e1caf31b84a108805eae3085468f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7dd7a2cf2d5c645beb49850db84ce700, type: 2}
@@ -15439,6 +15447,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11a3e1caf31b84a108805eae3085468f, type: 3}
       propertyPath: m_Name
       value: glass cupboards reset pivots 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614784328469061886, guid: 11a3e1caf31b84a108805eae3085468f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7614784328469061886, guid: 11a3e1caf31b84a108805eae3085468f, type: 3}
       propertyPath: m_Materials.Array.data[0]
