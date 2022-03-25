@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class FadeToBlackController : MonoBehaviour
 {
@@ -12,9 +13,13 @@ public class FadeToBlackController : MonoBehaviour
     bool canFade = false;
     bool fadingIn = false;
 
+    bool opIsDone = false;
+
     public GameObject XRRig;
     XRController leftHand;
     XRController rightHand;
+
+    Camera camera;
 
     void Start() {
         //squareImage = Camera.main.transform.GetChild(0).GetChild(0).GetComponent<Image>();
@@ -22,6 +27,7 @@ public class FadeToBlackController : MonoBehaviour
         StartCoroutine(returnFromBlackAtStart());
         leftHand = XRRig.transform.GetChild(0).GetChild(1).GetComponent<XRController>();
         rightHand = XRRig.transform.GetChild(0).GetChild(2).GetComponent<XRController>();
+        camera = GetComponent<Camera>();
     }
 
     public bool getCanFade() {
@@ -32,7 +38,6 @@ public class FadeToBlackController : MonoBehaviour
         return XRRig.GetComponent<ContinuousMovement>().GetEitherHandEmpty();
     }
 
-    // Update is called once per frame
     public void callFade() {
         if (!canOpenDoor()) return;
 
@@ -46,15 +51,15 @@ public class FadeToBlackController : MonoBehaviour
     public IEnumerator fadeToBlack() {
         Color color = squareImage.color;
         float fadeAmount;
-
-        while(squareImage.color.a < 1.2f) {
+        //camera.enabled = false;
+        while (squareImage.color.a < 1.2f && !opIsDone) {
             fadeAmount = color.a + (fadeSpeed * Time.deltaTime);
 
             color = new Color(color.r, color.g, color.b, fadeAmount);
             squareImage.color = color;
             yield return null;
         }
-        StartCoroutine(returnFromBlack());
+        //StartCoroutine(returnFromBlack());
     }
 
     public void SwapRooms(List<GameObject> toDisable, List<GameObject> toEnable) {
@@ -65,23 +70,49 @@ public class FadeToBlackController : MonoBehaviour
             g.SetActive(true);
     }
 
-    public IEnumerator returnFromBlack() {
-        leftHand.enableInputActions = true;
-        rightHand.enableInputActions = true;
+    public void StartReturnFromBlack() {
+        
+    }
+
+    public void PassSceneAsync(string s) {
+        AsyncOperation op = SceneManager.LoadSceneAsync(s);
+        StopCoroutine(fadeToBlack());
+        StartCoroutine(returnFromBlack(op));
+    }
+
+    public IEnumerator returnFromBlack(AsyncOperation op) {
+
+        while (!opIsDone) {
+            Debug.Log("woww");
+            if (op.isDone) {
+                opIsDone = true;
+            } else {
+                yield return null;
+            }
+        }
+
+        Debug.Log("aaa");
         fadingIn = true;
         Color color = squareImage.color;
-        float fadeAmount;
+        float fadeAmount = 0f;
+
 
         while (squareImage.color.a > 0) {
+            Debug.Log(squareImage.color.a);
             fadeAmount = color.a - (fadeSpeed * Time.deltaTime);
 
             color = new Color(color.r, color.g, color.b, fadeAmount);
             squareImage.color = color;
             yield return null;
         }
-
+        leftHand.enableInputActions = true;
+        rightHand.enableInputActions = true;
         canFade = true;
         fadingIn = false;
+        opIsDone = false;
+        Debug.Log("Done");
+        //camera.enabled = true;
+
     }
 
     public IEnumerator returnFromBlackAtStart() {

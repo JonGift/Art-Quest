@@ -6,7 +6,7 @@ s .gitignore file should be placed at the root of your Unity project directory
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
-#/[Bb]uilds/
+/[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
@@ -60,3 +60,11 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+Assets/AllSkyFree/Night MoonBurst/Materials.meta
+Assets/Georgia Textures/Communication room/videos/Compressed 12 fps videos/12 fps Georgia compressed.mp4.meta
+Assets/Georgia Textures/Communication room/videos/Compressed 12 fps videos/12 fps Grace compressed.mp4.meta
+Assets/Georgia Textures/Communication room/videos/Compressed 12 fps videos/12 fps Natalie compressed.mp4.meta
+Assets/Georgia Textures/Communication room/videos/Compressed 12 fps videos/12 fps Syd compressed.mp4.meta
+Assets/SkySeries Freebie/FreebieHdri/HighFantasy4k.hdr
+Assets/SkySeries Freebie/FreebieHdri/UnderTheSea4k.hdr
+Assets/SkySeries Freebie/FreebieHdri/UnearthlyRed4k.hdr
