@@ -17,6 +17,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Oculus/VR/Scenes/HandTest_Custom.unity
     guid: c884d076d6398b54492bcc64bbe30bf5
+  - enabled: 1
+    path: Assets/Scenes/Green1Room1.unity
+    guid: 1cc469a4a8c6e1a4eb2d0256920aa3db
+  - enabled: 1
+    path: Assets/Scenes/Green2Room1.unity
+    guid: 5fa5251235d4f1344ab61038c35c608a
+  - enabled: 1
+    path: Assets/Scenes/Green3Room1.unity
+    guid: d3e1d27f90fab1942bb6c64e2531e6d5
+  - enabled: 1
+    path: Assets/Scenes/Pink3Room1.unity
+    guid: 9983b449e82228747905a38c90026dfa
+  - enabled: 1
+    path: Assets/Scenes/Pink4Room1.unity
+    guid: b3b8af44593e7e84f86ba2b08fba56ec
+  - enabled: 1
+    path: Assets/Scenes/Pink5Room1.unity
+    guid: 8ffc46b8f2cd1bc418aa7f128197bfd8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: faa09bf6b6dd28945a0f62151b0ac79a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e425ae66d318a3c4e8d0d22835ac4051, type: 2}

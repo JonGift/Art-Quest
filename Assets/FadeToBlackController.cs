@@ -32,7 +32,6 @@ public class FadeToBlackController : MonoBehaviour
         return XRRig.GetComponent<ContinuousMovement>().GetEitherHandEmpty();
     }
 
-    // Update is called once per frame
     public void callFade() {
         if (!canOpenDoor()) return;
 
@@ -66,8 +65,7 @@ public class FadeToBlackController : MonoBehaviour
     }
 
     public IEnumerator returnFromBlack() {
-        leftHand.enableInputActions = true;
-        rightHand.enableInputActions = true;
+
         fadingIn = true;
         Color color = squareImage.color;
         float fadeAmount;
@@ -79,7 +77,8 @@ public class FadeToBlackController : MonoBehaviour
             squareImage.color = color;
             yield return null;
         }
-
+        leftHand.enableInputActions = true;
+        rightHand.enableInputActions = true;
         canFade = true;
         fadingIn = false;
     }

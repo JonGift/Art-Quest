@@ -148,6 +148,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 2790967961703174562, guid: 48e8a3b290e16b54f80e7745b5702b57, type: 2}
   - {fileID: -3610273597577236785, guid: e425ae66d318a3c4e8d0d22835ac4051, type: 2}
   - {fileID: 11400000, guid: faa09bf6b6dd28945a0f62151b0ac79a, type: 2}
@@ -257,7 +258,7 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 1
   useCustomGradlePropertiesTemplate: 1
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 2
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -709,6 +710,7 @@ PlayerSettings:
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
+    Android: 1
     Standalone: 0
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}

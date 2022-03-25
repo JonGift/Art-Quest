@@ -12,24 +12,31 @@ public class DoorSwapController : MonoBehaviour
 
     public string sceneToSwapName; // If swapping scenes
 
-    private void Start() {
+    void Start() {
+        SceneManager.activeSceneChanged += FindFadeCheck;
         fadeCheck = FindObjectOfType<FadeToBlackController>();
+    }
+
+    private void OnDestroy() {
+        SceneManager.activeSceneChanged -= FindFadeCheck;
     }
 
     public void FindFadeAndCallFade() {
         FadeToBlackController controller = FindObjectOfType<FadeToBlackController>();
         controller.callFade();
+        if (!fadeCheck.getCanFade() && fadeCheck.canOpenDoor())
+            StartCoroutine(swapAfterDelayEnum());
     }
 
     public void swapAfterDelay() {
-        if(!fadeCheck.getCanFade() && fadeCheck.canOpenDoor())
-            StartCoroutine(swapAfterDelayEnum());
+
     }
 
     public IEnumerator swapAfterDelayEnum() {
         yield return new WaitForSeconds(1f);
         DisableInterruptingObjects();
         if (sceneToSwapName != null && sceneToSwapName != "") {
+            EnableAttachedObjects();
             SwapScene();
         } else {
             EnableAttachedObjects();
@@ -51,11 +58,19 @@ public class DoorSwapController : MonoBehaviour
     }
 
     public void SwapScene() {
+       // HallwayController temp = GameObject.FindObjectOfType<HallwayController>();
+       // if (temp)
+        //    temp.ToggleSelf();
+
         SceneManager.LoadScene(sceneToSwapName);
     }
 
     public void DisableInterruptingObjects() {
         foreach (GameObject g in interruptingObjects)
             g.SetActive(false);
+    }
+
+    void FindFadeCheck(Scene c, Scene s) {
+        fadeCheck = FindObjectOfType<FadeToBlackController>();
     }
 }
