@@ -12,6 +12,9 @@ public class DoorSwapController : MonoBehaviour
 
     public string sceneToSwapName; // If swapping scenes
 
+    AsyncOperation op;
+    FadeToBlackController controller;
+
     void Start() {
         SceneManager.activeSceneChanged += FindFadeCheck;
         fadeCheck = FindObjectOfType<FadeToBlackController>();
@@ -22,7 +25,7 @@ public class DoorSwapController : MonoBehaviour
     }
 
     public void FindFadeAndCallFade() {
-        FadeToBlackController controller = FindObjectOfType<FadeToBlackController>();
+        controller = FindObjectOfType<FadeToBlackController>();
         controller.callFade();
         if (!fadeCheck.getCanFade() && fadeCheck.canOpenDoor())
             StartCoroutine(swapAfterDelayEnum());
@@ -62,7 +65,7 @@ public class DoorSwapController : MonoBehaviour
        // if (temp)
         //    temp.ToggleSelf();
 
-        SceneManager.LoadScene(sceneToSwapName);
+        controller.PassSceneAsync(sceneToSwapName);
     }
 
     public void DisableInterruptingObjects() {
