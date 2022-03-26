@@ -1,0 +1,422 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &24036617870335824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1497042898718014433}
+    m_Modifications:
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613119613405811089, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101249259146087211, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Blanket
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3212d9f69fcbe04448a69d7a26815a08, type: 3}
+--- !u!1001 &1638975266123711320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 663031260177719811, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Gray Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+--- !u!4 &1497042898718014433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 177997495923587257, guid: 9bc23a17e631a1d4bb35ee5a94f44e3c, type: 3}
+  m_PrefabInstance: {fileID: 1638975266123711320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3365777302991035151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1497042898718014433}
+    m_Modifications:
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402058265629496191, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922593065131788741, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Duvet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c010e62d1e13e2a43a0029036c80b4fe, type: 3}
+--- !u!1001 &5665013151209942642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1497042898718014433}
+    m_Modifications:
+    - target: {fileID: 2165610228628320025, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Cushion3_GeometricPattern
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.27554986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.60899997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8836147
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4669329
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0296062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0179477
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 55.499
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 7.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165610228628320028, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 6.016
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8490b14c53356594d98dd08fabe5b168, type: 3}
+--- !u!1001 &6605334512351342593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1497042898718014433}
+    m_Modifications:
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.301
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.72875285
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91500294
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.39817026
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.022855502
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.060891695
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 47.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562965, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -7.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516413382433562970, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Cushion3_Mustard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01b53c783212a2842bb55e6cdb470eb9, type: 3}
+--- !u!1001 &6775982001653556567
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1497042898718014433}
+    m_Modifications:
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2124899
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99912137
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.017699087
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0004169611
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.037988372
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.029000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279051981, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281556366279052018, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Cushion2_Gray
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 325a366d12997cb43805e28da249c5cb, type: 3}
+--- !u!1001 &8218278858552236506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1497042898718014433}
+    m_Modifications:
+    - target: {fileID: 2471419776299266184, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_Name
+      value: VelvetBed_Cushion1_Gray
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.90000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.68347555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9949526
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.03062049
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.006198069
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.09535895
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -3.561
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.37300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471419776299266187, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -10.938001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a57ee3921fc7287488d51afb4a328dae, type: 3}
