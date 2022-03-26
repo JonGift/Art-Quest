@@ -100,7 +100,7 @@ public class TestSaver : MonoBehaviour
                 byte[] pngData = newTex.EncodeToPNG();
                 if (pngData != null) {
                     File.WriteAllBytes(path, pngData);
-                    AssetDatabase.Refresh();
+                    //AssetDatabase.Refresh();
                 }
 
                 Debug.Log(path);
@@ -119,7 +119,7 @@ public class TestSaver : MonoBehaviour
                 byte[] pngData = newTex.EncodeToPNG();
                 if (pngData != null) {
                     File.WriteAllBytes(path, pngData);
-                    AssetDatabase.Refresh();
+                    //AssetDatabase.Refresh();
                 }
             }
         }
