@@ -5,6 +5,9 @@ using UnityEngine;
 public class SunController : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float speed = .25f;
+    public bool yAxis = false;
+
     void Start()
     {
         
@@ -13,6 +16,11 @@ public class SunController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.right * Time.deltaTime * .25f);
+        if (!yAxis) {
+            transform.Rotate(Vector3.right * Time.deltaTime * speed);
+        } else {
+            transform.Rotate(Vector3.up * Time.deltaTime * speed);
+        }
+
     }
 }

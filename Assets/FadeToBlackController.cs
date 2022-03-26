@@ -83,7 +83,6 @@ public class FadeToBlackController : MonoBehaviour
     public IEnumerator returnFromBlack(AsyncOperation op) {
 
         while (!opIsDone) {
-            Debug.Log("woww");
             if (op.isDone) {
                 opIsDone = true;
             } else {

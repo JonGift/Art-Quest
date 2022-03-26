@@ -107,7 +107,6 @@ public class TestSaver : MonoBehaviour
             }
         }else if (saveRandom) {
             string name = System.DateTime.Now.ToString("MM-dd-yyyy-h-mm-ss-tt");
-            Debug.Log(name);
             string path = Application.persistentDataPath + "/paintings/random/" + name + ".png";
             if (path.Length != 0) {
                 RenderTexture renderTexture = inkCanvas.GetPaintMainTexture(matSelf.name);
@@ -127,7 +126,11 @@ public class TestSaver : MonoBehaviour
     }
 
     private void OnApplicationQuit() {
-        SaveRenderTextureToPNGAuto();
+        //SaveRenderTextureToPNGAuto();
+    }
+
+    private void OnDestroy() {
+        //SaveRenderTextureToPNGAuto();
     }
 
 }
