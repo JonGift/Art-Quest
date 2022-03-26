@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.39905715, g: 0.4618034, b: 0.58087975, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2947,7 +2947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4334025059853657909, guid: b17b2e5c9fd854d7aa1817944d22537b, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 5003910529452757130, guid: b17b2e5c9fd854d7aa1817944d22537b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4030,7 +4030,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357812489}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: eaa9f260be0524b45bdc1e2f334b7e6d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 867e3eb51c7d34e0181cc994a3a784a0, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4878,7 +4878,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!4 &478605286
 Transform:
@@ -7004,7 +7004,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!4 &660803938
 Transform:
@@ -7160,7 +7160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 66912eae575ec4d38a0c6d9063141c0f, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66912eae575ec4d38a0c6d9063141c0f, type: 3}
@@ -8208,7 +8208,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 215ef313b136f471d8f0034d999593f5, type: 2}
     - target: {fileID: -3836750183154432129, guid: 09e2745d6702b46099c99ebd45ee81be, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: -3311849455117297148, guid: 09e2745d6702b46099c99ebd45ee81be, type: 3}
       propertyPath: m_StaticShadowCaster
@@ -8530,7 +8530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4665012819723448594, guid: 337ba27e4c0ed4ed998183c490458287, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: -3841976549707008140, guid: 337ba27e4c0ed4ed998183c490458287, type: 3}
       propertyPath: m_CastShadows
@@ -12816,7 +12816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3523186271877874327, guid: 108208454a9af4aa3888e663611e7fab, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 108208454a9af4aa3888e663611e7fab, type: 3}
       propertyPath: m_Name
@@ -14487,7 +14487,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384171629}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 038c586e79bfd4fb3b76c1a6543a90cd, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 9fad3e4eae29f4b518490edaad535d76, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -15520,7 +15520,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446530674}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: fc00592fa50654e64a7c3345252aecfe, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0a83af7f72062445daab9121ed9263c4, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -21921,7 +21921,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995175078}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bc0480285297a4c82bd443804cff176a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 508e3a8fbb00e498591c797dade3e04d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -23289,7 +23289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3152556339087599517, guid: b864e295958bb44be850d9413276084a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 126
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 5994134498327729393, guid: b864e295958bb44be850d9413276084a, type: 3}
       propertyPath: m_StaticEditorFlags
