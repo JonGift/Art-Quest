@@ -61,10 +61,14 @@ public class ContinuousMovement : MonoBehaviour
     }
 
     bool CheckIfGrounded() {
-        Vector3 rayStart = transform.TransformPoint(character.center);
-        float rayLength = character.center.y + .01f;
+        /*Vector3 rayStart = transform.TransformPoint(character.center);
+        float rayLength = character.center.y + .005f;
 
-        return Physics.SphereCast(rayStart, character.radius, Vector3.down, out RaycastHit hitInfo, rayLength, groundLayer);
+        return Physics.SphereCast(rayStart, character.radius, Vector3.down, out RaycastHit hitInfo, rayLength, groundLayer);*/
+        if(transform.position.y > 0) {
+            return false;
+        }
+        return true;
     }
 
     void CapsuleFollowHeadset() {

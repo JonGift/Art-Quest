@@ -25,30 +25,28 @@ public class TestSaver : MonoBehaviour
 
     private void Awake() {
         matSelf = GetComponent<Renderer>().materials[0];
-        if (Directory.Exists(Application.persistentDataPath + "/paintings")) {
-            string paintingsFolder = Application.persistentDataPath + "/paintings";
-
-            DirectoryInfo d = new DirectoryInfo(paintingsFolder);
-        } else {
+        if (!Directory.Exists(Application.persistentDataPath + "/paintings")) {
             Directory.CreateDirectory(Application.persistentDataPath + "/paintings");
-            return;
         }
 
         if(saveRandom || loadRandom) {
-            if (Directory.Exists(Application.persistentDataPath + "/paintings/random")) {
-                string paintingsFolder = Application.persistentDataPath + "/paintings/random";
-
-                DirectoryInfo d = new DirectoryInfo(paintingsFolder);
-            } else {
+            if (!Directory.Exists(Application.persistentDataPath + "/paintings/random")) {
                 Directory.CreateDirectory(Application.persistentDataPath + "/paintings/random");
-                return;
             }
         }
 
 
         if (loadSpecific && specificName != "") {
-            byte[] byteArray = File.ReadAllBytes(Application.persistentDataPath + "/paintings/" + specificName);
-            Texture2D texture = new Texture2D(256, 256);
+            byte[] byteArray;
+            try {
+                byteArray = File.ReadAllBytes(Application.persistentDataPath + "/paintings/" + specificName + ".png");
+            } catch {
+                Debug.Log("error: file does not exist.");
+                inkCanvas = GetComponent<InkCanvas>();
+                return;
+            }
+
+            Texture2D texture = new Texture2D(256, 256, TextureFormat.ARGB4444, false);
             texture.LoadImage(byteArray);
             RenderTexture rt = new RenderTexture(128, 128, 0);
             RenderTexture.active = rt;
@@ -88,7 +86,7 @@ public class TestSaver : MonoBehaviour
     public void SaveRenderTextureToPNGAuto() {
         if(saveSpecific && specificName != "") {
             //string path = EditorUtility.SaveFilePanel("Save to png", Application.dataPath, textureName + "_painted.png", "png");
-            string path = Application.persistentDataPath + "/paintings/" + specificName;
+            string path = Application.persistentDataPath + "/paintings/" + specificName + ".png";
             if (path.Length != 0) {
                 RenderTexture renderTexture = inkCanvas.GetPaintMainTexture(matSelf.name);
                 //RenderTexture renderTexture = GetComponent<Renderer>().materials[0].mainTexture;
@@ -102,8 +100,6 @@ public class TestSaver : MonoBehaviour
                     File.WriteAllBytes(path, pngData);
                     //AssetDatabase.Refresh();
                 }
-
-                Debug.Log(path);
             }
         }else if (saveRandom) {
             string name = System.DateTime.Now.ToString("MM-dd-yyyy-h-mm-ss-tt");
