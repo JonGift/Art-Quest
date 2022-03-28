@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -290,6 +290,10 @@ PrefabInstance:
     - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_Name
       value: dinning_chair (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3930646106246996454, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_RootOrder
@@ -600,6 +604,10 @@ PrefabInstance:
     - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_Name
       value: dinning_chair (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3930646106246996454, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_RootOrder
@@ -1482,7 +1490,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.6273585, g: 1, b: 0.6615622, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1557,6 +1565,10 @@ PrefabInstance:
     - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_Name
       value: dinning_chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3930646106246996454, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_RootOrder
@@ -1674,6 +1686,10 @@ PrefabInstance:
     - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_Name
       value: dinning_chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3930646106246996454, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_RootOrder
@@ -1852,6 +1868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: carpet 1
       objectReference: {fileID: 0}
+    - target: {fileID: 179306005075938249, guid: a1207588f2e8629498ee04b03b09ad5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1207588f2e8629498ee04b03b09ad5f, type: 3}
 --- !u!4 &1616485041 stripped
@@ -1869,6 +1889,10 @@ PrefabInstance:
     - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_Name
       value: dinning_chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3930646106246996454, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_RootOrder
@@ -2193,6 +2217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 953337191}
     m_Modifications:
+    - target: {fileID: 4609017029422773096, guid: 582be4f21cd1b7548ad178e7b18a4189, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4609017029422773099, guid: 582be4f21cd1b7548ad178e7b18a4189, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2428,6 +2456,10 @@ PrefabInstance:
     - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_Name
       value: dinning_chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930646106246512070, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3930646106246996454, guid: 3050c5cfb55253245a7d236a47d63e74, type: 3}
       propertyPath: m_RootOrder
