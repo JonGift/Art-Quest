@@ -7,14 +7,11 @@ public class SunController : MonoBehaviour
     // Start is called before the first frame update
     public float speed = .25f;
     public bool yAxis = false;
-
-    void Start()
-    {
-        
-    }
+    public float additionalModifier = 0f; // positive only
+    public float maxSpeed = 0f; // positive only
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!yAxis) {
             transform.Rotate(Vector3.right * Time.deltaTime * speed);
@@ -22,5 +19,7 @@ public class SunController : MonoBehaviour
             transform.Rotate(Vector3.up * Time.deltaTime * speed);
         }
 
+        if(additionalModifier != 0f && speed < maxSpeed)
+            speed += additionalModifier;
     }
 }

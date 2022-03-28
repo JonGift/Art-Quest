@@ -12553,6 +12553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   yAxis: 1
+  additionalModifier: 0
+  maxSpeed: 0
 --- !u!1 &764217107
 GameObject:
   m_ObjectHideFlags: 0
@@ -15424,6 +15426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   yAxis: 1
+  additionalModifier: 0
+  maxSpeed: 0
 --- !u!4 &938503872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0435ea12bfe7d4de798e4ba015f1809d, type: 3}
@@ -33311,6 +33315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.25
   yAxis: 0
+  additionalModifier: 0
+  maxSpeed: 0
 --- !u!1 &1964134656
 GameObject:
   m_ObjectHideFlags: 0
@@ -34400,8 +34406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c22828868e73d754db48fe6197f79103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   yAxis: 1
+  additionalModifier: 0.0001
+  maxSpeed: 5
 --- !u!1 &2009228262
 GameObject:
   m_ObjectHideFlags: 0

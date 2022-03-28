@@ -90,7 +90,6 @@ public class FadeToBlackController : MonoBehaviour
             }
         }
 
-        Debug.Log("aaa");
         fadingIn = true;
         Color color = squareImage.color;
         float fadeAmount = 0f;

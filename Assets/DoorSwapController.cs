@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DoorSwapController : MonoBehaviour
 {
@@ -15,9 +16,16 @@ public class DoorSwapController : MonoBehaviour
     AsyncOperation op;
     FadeToBlackController controller;
 
+    public List<AudioClip> doorSounds;
+    AudioSource source;
+
+
+
     void Start() {
+        source = GetComponent<AudioSource>();
         SceneManager.activeSceneChanged += FindFadeCheck;
         fadeCheck = FindObjectOfType<FadeToBlackController>();
+
     }
 
     private void OnDestroy() {
@@ -27,6 +35,8 @@ public class DoorSwapController : MonoBehaviour
     public void FindFadeAndCallFade() {
         controller = FindObjectOfType<FadeToBlackController>();
         controller.callFade();
+        source.clip = doorSounds[0];
+        source.Play();
         if (!fadeCheck.getCanFade() && fadeCheck.canOpenDoor())
             StartCoroutine(swapAfterDelayEnum());
     }
@@ -75,5 +85,15 @@ public class DoorSwapController : MonoBehaviour
 
     void FindFadeCheck(Scene c, Scene s) {
         fadeCheck = FindObjectOfType<FadeToBlackController>();
+
+        if(c.name == sceneToSwapName) {
+            source.clip = doorSounds[1];
+            source.Play();
+        }
+    }
+
+    public void DoorCloses() {
+        source.clip = doorSounds[1];
+        source.Play();
     }
 }
