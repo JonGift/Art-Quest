@@ -66,4 +66,9 @@ public class XROffsetGrabbable : XRGrabInteractable
         int interactorLayerMask = 1 << interactor.gameObject.layer;
         return base.IsSelectableBy(interactor) && (interactionLayerMask.value & interactorLayerMask) != 0;
     }
+
+    public void ForceDeselect() {
+        //XRBaseInteractable interactable = GetComponent<XRBaseInteractable>();
+        //interactable.interactionManager.CancelInteractableSelection(interactable);
+    }
 }

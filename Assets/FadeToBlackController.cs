@@ -20,6 +20,7 @@ public class FadeToBlackController : MonoBehaviour
     XRController rightHand;
 
     Camera camera;
+    AudioSource source;
 
     void Start() {
         //squareImage = Camera.main.transform.GetChild(0).GetChild(0).GetComponent<Image>();
@@ -28,6 +29,7 @@ public class FadeToBlackController : MonoBehaviour
         leftHand = XRRig.transform.GetChild(0).GetChild(1).GetComponent<XRController>();
         rightHand = XRRig.transform.GetChild(0).GetChild(2).GetComponent<XRController>();
         camera = GetComponent<Camera>();
+        source = GetComponent<AudioSource>();
     }
 
     public bool getCanFade() {
@@ -94,9 +96,10 @@ public class FadeToBlackController : MonoBehaviour
         Color color = squareImage.color;
         float fadeAmount = 0f;
 
+        source.Play();
 
         while (squareImage.color.a > 0) {
-            Debug.Log(squareImage.color.a);
+            //Debug.Log(squareImage.color.a);
             fadeAmount = color.a - (fadeSpeed * Time.deltaTime);
 
             color = new Color(color.r, color.g, color.b, fadeAmount);
@@ -108,7 +111,7 @@ public class FadeToBlackController : MonoBehaviour
         canFade = true;
         fadingIn = false;
         opIsDone = false;
-        Debug.Log("Done");
+        //Debug.Log("Done");
         //camera.enabled = true;
 
     }

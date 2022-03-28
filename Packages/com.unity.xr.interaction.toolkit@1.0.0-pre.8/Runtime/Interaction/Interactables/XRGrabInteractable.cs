@@ -748,6 +748,9 @@ namespace UnityEngine.XR.Interaction.Toolkit
             }
             else if (m_RetainTransformParent && gameObject.activeInHierarchy)
                 transform.SetParent(m_OriginalSceneParent);
+			
+			// jon edit idc about this trash
+			transform.SetParent(m_OriginalSceneParent);
 
             SetupRigidbodyDrop(m_Rigidbody);
 
