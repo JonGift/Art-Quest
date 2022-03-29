@@ -738,10 +738,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8199587024395101456, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: -1217478495358084723, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: -811164759111994035, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: 453239943964878671, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
     - target: {fileID: 919132149155446097, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
       propertyPath: m_Name
       value: 'thick '
       objectReference: {fileID: 0}
+    - target: {fileID: 1963370097745750299, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: 1999716629280777530, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: 2813484266765156899, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: 5899946409606464887, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
+    - target: {fileID: 6088599626573656390, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6483b82d047e94bde8ec04148440213e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2becfbbe1fe764754b1e6db2443cf2bb, type: 3}
 --- !u!4 &200009511 stripped
@@ -2260,12 +2296,24 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6df8d22b0d2d1426b8332d0ed23089c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.84172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6df8d22b0d2d1426b8332d0ed23089c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.84172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6df8d22b0d2d1426b8332d0ed23089c4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.84172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6df8d22b0d2d1426b8332d0ed23089c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6df8d22b0d2d1426b8332d0ed23089c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.0068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6df8d22b0d2d1426b8332d0ed23089c4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3983,6 +4031,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2629589546813886484, guid: a93da17d3e81b424585bb1f185ee9da6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5788b4de37cbe422f874ab0b5dab25bb, type: 2}
     - target: {fileID: 919132149155446097, guid: a93da17d3e81b424585bb1f185ee9da6, type: 3}
       propertyPath: m_Name
       value: Archisketch_660601_Frame
