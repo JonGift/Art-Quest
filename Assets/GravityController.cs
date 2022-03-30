@@ -8,13 +8,23 @@ public class GravityController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.tag != "Player") {
-            other.GetComponent<Rigidbody>().useGravity = enableGravity;
+            Rigidbody rb = other.GetComponent<Rigidbody>();
+            if (rb == null)
+                rb = other.transform.parent.GetComponent<Rigidbody>();
+
+            if(rb)
+                rb.useGravity = enableGravity;
         }
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.tag != "Player") {
-            other.GetComponent<Rigidbody>().useGravity = !enableGravity;
+            Rigidbody rb = other.GetComponent<Rigidbody>();
+            if (rb == null)
+                rb = other.transform.parent.GetComponent<Rigidbody>();
+
+            if (rb)
+                rb.useGravity = !enableGravity;
         }
     }
 }
