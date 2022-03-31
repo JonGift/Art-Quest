@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - VisionTrigger
+  - Pong
+  - WallPlayer
+  - WallRobot
   layers:
   - Default
   - TransparentFX
