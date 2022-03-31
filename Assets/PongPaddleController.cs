@@ -33,7 +33,7 @@ public class PongPaddleController : MonoBehaviour
     private void resetPos() {
         transform.position = startPos;
         rb.velocity = Vector3.zero;
-        Invoke("resetPosDelay", 2f);
+        Invoke("resetPosDelay", 1f);
         keepAlive = 5f;
 
     }

@@ -65,24 +65,6 @@ public class TestSaver : MonoBehaviour
         inkCanvas = GetComponent<InkCanvas>();
     }
 
-    void Start() {
-        Invoke("LateStart", 3f);
-        //if(save)
-        //    InvokeRepeating("SaveRenderTextureToPNGAuto", 10f, 10f);
-    }
-
-    void LateStart() {
-
-    }
-
-    private void Update() {
-        //RenderTexture rt = new RenderTexture(texRef.width / 2, texRef.height / 2, 0);
-        //RenderTexture.active = rt;
-        // Copy your texture ref to the render texture
-        //Graphics.Blit(texRef, rt);
-        //matSelf.SetTexture("_BaseMap", texRef);
-    }
-
     public void SaveRenderTextureToPNGAuto() {
         if(saveSpecific && specificName != "") {
             //string path = EditorUtility.SaveFilePanel("Save to png", Application.dataPath, textureName + "_painted.png", "png");
