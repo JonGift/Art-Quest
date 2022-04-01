@@ -8,6 +8,8 @@ TagManager:
   - Pong
   - WallPlayer
   - WallRobot
+  - RightWall
+  - LeftWall
   layers:
   - Default
   - TransparentFX
