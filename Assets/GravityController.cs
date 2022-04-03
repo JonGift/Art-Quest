@@ -17,7 +17,7 @@ public class GravityController : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other) {
+    /*private void OnTriggerExit(Collider other) {
         if (other.tag != "Player") {
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb == null)
@@ -26,5 +26,5 @@ public class GravityController : MonoBehaviour
             if (rb)
                 rb.useGravity = !enableGravity;
         }
-    }
+    }*/
 }
