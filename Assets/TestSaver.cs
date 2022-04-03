@@ -67,6 +67,7 @@ public class TestSaver : MonoBehaviour
 
     public void SaveRenderTextureToPNGAuto() {
         if(saveSpecific && specificName != "") {
+            Debug.Log("Saving file: " + specificName);
             //string path = EditorUtility.SaveFilePanel("Save to png", Application.dataPath, textureName + "_painted.png", "png");
             string path = Application.persistentDataPath + "/paintings/" + specificName + ".png";
             if (path.Length != 0) {
