@@ -14157,6 +14157,10 @@ PrefabInstance:
       value: Georgia ceiling (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4836396722855667408, guid: 2dd4d73d6d39a4875b748d878649ee74, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836396722855667408, guid: 2dd4d73d6d39a4875b748d878649ee74, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 127
       objectReference: {fileID: 0}
