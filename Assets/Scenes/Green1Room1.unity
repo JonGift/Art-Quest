@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.295
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17503712, g: 0.20537105, b: 0.22952025, a: 0.295}
+  m_IndirectSpecularColor: {r: 0.17507896, g: 0.20541708, b: 0.22954874, a: 0.295}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4412,15 +4412,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6113947551843072359, guid: d249acc6ca4d54d3f8fbf650008fcac0, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5694919641576613814, guid: d249acc6ca4d54d3f8fbf650008fcac0, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3852341972610935857, guid: d249acc6ca4d54d3f8fbf650008fcac0, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3400905897218712570, guid: d249acc6ca4d54d3f8fbf650008fcac0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4436,7 +4436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2668695328630186529, guid: d249acc6ca4d54d3f8fbf650008fcac0, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2450849009015537254, guid: d249acc6ca4d54d3f8fbf650008fcac0, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13167,7 +13167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205418470257200, guid: 9728f5273dcb3d14eb276f261a55e9ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 79.632
       objectReference: {fileID: 0}
     - target: {fileID: 4205418470257200, guid: 9728f5273dcb3d14eb276f261a55e9ea, type: 3}
       propertyPath: m_LocalScale.z
@@ -13179,7 +13179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205418470257200, guid: 9728f5273dcb3d14eb276f261a55e9ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 146.4
+      value: 146.5
       objectReference: {fileID: 0}
     - target: {fileID: 4205418470257200, guid: 9728f5273dcb3d14eb276f261a55e9ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20460,7 +20460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8006860588814839719, guid: 6df6766f3e4b243819a13cea77ea06f2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df6766f3e4b243819a13cea77ea06f2, type: 3}
@@ -23167,7 +23167,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2033223894
 Transform:
