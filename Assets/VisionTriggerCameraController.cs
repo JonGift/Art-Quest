@@ -9,11 +9,15 @@ public class VisionTriggerCameraController : MonoBehaviour
     Camera cam;
 
     List<GameObject> visionTriggers;
+    public GameObject hallways;
+    GameObject hallwayChild;
 
     float viewAngle = 50f;
 
     void Start() {
+        visionTriggers = new List<GameObject>();
         SceneManager.activeSceneChanged += UpdateTriggers;
+        InvokeRepeating("findTriggers", 0, .125f);
     }
 
     private void OnDestroy() {
@@ -27,6 +31,10 @@ public class VisionTriggerCameraController : MonoBehaviour
     }
 
     void findTriggers() {
+        if(hallways != null)
+            if (!hallwayChild.active)
+                return;
+        
         RaycastHit hit;
         foreach (GameObject g in visionTriggers) {
             if (g) {
@@ -46,6 +54,9 @@ public class VisionTriggerCameraController : MonoBehaviour
     }
 
     public void UpdateTriggers(Scene c, Scene n) {
+        hallways = FindObjectOfType<HallwayController>().gameObject;
+        if (hallways)
+            hallwayChild = hallways.transform.GetChild(0).gameObject;
         cam = GetComponent<Camera>();
 
         visionTriggers = new List<GameObject>();
@@ -56,7 +67,7 @@ public class VisionTriggerCameraController : MonoBehaviour
         visionTriggers = visionTriggers.Where(g => g != null).ToList();
 
         viewAngle = cam.fieldOfView;
-        InvokeRepeating("findTriggers", 0, .125f);
+        //InvokeRepeating("findTriggers", 0, .125f);
         Invoke("Clean", 2f);
     }
 
