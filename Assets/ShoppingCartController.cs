@@ -5,21 +5,18 @@ using UnityEngine;
 public class ShoppingCartController : MonoBehaviour
 {
     public GameObject box;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Grab"))
-            other.transform.position = new Vector3(other.transform.position.x, box.transform.position.y + 5, other.transform.position.z);
+        if(other.gameObject.layer == LayerMask.NameToLayer("Grab")) {
+            if (!other.GetComponent<Rigidbody>()) {
+                GameObject temp = other.transform.parent.gameObject;
+                temp.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                temp.transform.position = new Vector3(box.transform.position.x, box.transform.position.y + 6, box.transform.position.z);
+            } else {
+                other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                other.transform.position = new Vector3(box.transform.position.x, box.transform.position.y + 6, box.transform.position.z);
+            }
+        }
+
     }
 }
