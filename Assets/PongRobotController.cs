@@ -16,7 +16,7 @@ public class PongRobotController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, transform.position.y, ball.transform.position.z + Random.Range(-.003f, .003f)), difficulty * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(ball.transform.position.x + Random.Range(-.003f, .003f), transform.position.y, transform.position.z), difficulty * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision) {

@@ -69,13 +69,13 @@ public class PongPaddleController : MonoBehaviour
             lastCollision = coll.gameObject;
             keepAlive = 5f;
             Vector3 vel;
-            if (rb.velocity.x < 0)
-                vel.x = 1 * difficulty;
+            if (rb.velocity.z < 0)
+                vel.z = 1 * difficulty;
             else
-                vel.x = -1 * difficulty;
+                vel.z = -1 * difficulty;
             //vel.x = rb.velocity.x * -1;
             vel.y = 0;
-            vel.z = rb.velocity.z + coll.collider.attachedRigidbody.velocity.z + Random.Range(-.1f, .1f);
+            vel.x = rb.velocity.x + coll.collider.attachedRigidbody.velocity.x + Random.Range(-.1f, .1f);
                 
             rb.velocity = vel;
         } else {
@@ -86,13 +86,13 @@ public class PongPaddleController : MonoBehaviour
     private void OnTriggerEnter(Collider coll) {
         source.Play();
         Vector3 vel;
-        vel.z = -rb.velocity.z;
+        vel.x = -rb.velocity.x;
         //vel.z += Random.Range(-.1f, .1f);
 
-        if (rb.velocity.x < 0)
-            vel.x = -1 * difficulty;
+        if (rb.velocity.z < 0)
+            vel.z = -1 * difficulty;
         else
-            vel.x = 1 * difficulty;
+            vel.z = 1 * difficulty;
         vel.y = 0;
 
         rb.velocity = vel;
