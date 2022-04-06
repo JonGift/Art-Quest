@@ -117,7 +117,7 @@ public class FadeToBlackController : MonoBehaviour
     }
 
     public IEnumerator returnFromBlackAtStart() {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         XRRig.GetComponent<ContinuousMovement>().Reposition();
         Color color = squareImage.color;
         float fadeAmount;

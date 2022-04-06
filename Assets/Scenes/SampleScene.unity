@@ -12612,6 +12612,7 @@ MonoBehaviour:
   gravity: -9.81
   rightHandEmpty: 1
   leftHandEmpty: 1
+  cheatcodes: 0
 --- !u!114 &803044577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12641,7 +12642,7 @@ MonoBehaviour:
   m_System: {fileID: 803044577}
   m_TurnAmount: 1.5
   m_DebounceTime: 0.001
-  m_EnableTurnLeftRight: 1
+  m_EnableTurnLeftRight: 0
   m_EnableTurnAround: 0
   m_TurnUsage: 0
   m_Controllers:
