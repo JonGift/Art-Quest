@@ -8,6 +8,8 @@ public class NotificationOverlord : MonoBehaviour
     public GameObject target;
 
     public float frequency = 9f;
+    public float speedIncrease = .16f;
+    public float cap = .5f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +20,13 @@ public class NotificationOverlord : MonoBehaviour
 
     void SpawnNotifications() {
         int choice = Random.Range(0, notifications.Count);
-        Vector3 randomPos = new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(.1f, 2.3f), Random.Range(-1.5f, 1.9f));
+        Vector3 randomPos = new Vector3(Random.Range(-1.3f, 1.3f), Random.Range(.3f, 2.2f), Random.Range(-1.3f, 1.7f));
 
         GameObject temp = Instantiate(notifications[choice], randomPos, Quaternion.identity);
         temp.GetComponent<NotificationController>().UpdateTarget(target);
-        frequency -= .125f;
-        if (frequency < .75f)
-            frequency = 1f;
+        frequency -= speedIncrease;
+        if (frequency < cap)
+            frequency = cap;
         Invoke("SpawnNotifications", frequency);
     }
 }

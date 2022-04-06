@@ -78,8 +78,6 @@ public class PongPaddleController : MonoBehaviour
             vel.x = rb.velocity.x + coll.collider.attachedRigidbody.velocity.x + Random.Range(-.1f, .1f);
                 
             rb.velocity = vel;
-        } else {
-            
         }
     }
 
@@ -100,7 +98,8 @@ public class PongPaddleController : MonoBehaviour
             //difficulty -= .0001f;
             if (difficulty < 1)
                 difficulty = 1;
-            robot.changeDifficulty(false);
+            if(robot)
+                robot.changeDifficulty(false);
             resetPos();
         } else if (coll.gameObject.CompareTag("WallRobot")) {
             difficulty += .03f;
@@ -118,8 +117,10 @@ public class PongPaddleController : MonoBehaviour
             else
                 scoreText = "Score";
 
-            text.text = scoreText + "\n" + score;
-            robot.changeDifficulty(true);
+            if(text)
+                text.text = scoreText + "\n" + score;
+            if(robot)
+                robot.changeDifficulty(true);
             resetPos();
         }
     }

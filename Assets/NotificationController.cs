@@ -38,7 +38,7 @@ public class NotificationController : MonoBehaviour
         float fadeAmount;
         //camera.enabled = false;
         while (mat.color.a > 0f) {
-            fadeAmount = color.a - (.25f * Time.deltaTime);
+            fadeAmount = color.a - (.5f * Time.deltaTime);
 
             color = new Color(color.r, color.g, color.b, fadeAmount);
             mat.color = color;

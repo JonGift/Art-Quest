@@ -10,10 +10,10 @@ public class HockeySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("MakePong", 30f, 30f);
+        InvokeRepeating("MakePong", 60f, 60f);
     }
 
     void MakePong() {
-        Instantiate(puck, Vector3.zero, Quaternion.identity, parentThing.transform);
+        Instantiate(puck, new Vector3(-0.3132f, 0.71204f, 0.3225f), parentThing.transform.rotation, parentThing.transform);
     }
 }
