@@ -12,7 +12,7 @@ public class NotificationOverlord : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("SpawnNotifications", 0f);
+        Invoke("SpawnNotifications", 10f);
         target = Camera.main.gameObject;
     }
 
@@ -23,7 +23,7 @@ public class NotificationOverlord : MonoBehaviour
         GameObject temp = Instantiate(notifications[choice], randomPos, Quaternion.identity);
         temp.GetComponent<NotificationController>().UpdateTarget(target);
         frequency -= .125f;
-        if (frequency < 1f)
+        if (frequency < .75f)
             frequency = 1f;
         Invoke("SpawnNotifications", frequency);
     }
