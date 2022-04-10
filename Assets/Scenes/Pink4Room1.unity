@@ -803,6 +803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4184772085701218252, guid: 803312e484037d44ab6bba468ff28599, type: 3}
+      propertyPath: brush.brushScale
+      value: 0.0015
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803312e484037d44ab6bba468ff28599, type: 3}
 --- !u!4 &174443563 stripped
@@ -3262,6 +3266,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1006712595}
     m_Modifications:
+    - target: {fileID: 7565479352341752007, guid: 7b0306fece8ce02438b259505099ac54, type: 3}
+      propertyPath: brush.brushScale
+      value: 0.0015
+      objectReference: {fileID: 0}
     - target: {fileID: 7565479352341752010, guid: 7b0306fece8ce02438b259505099ac54, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -7005,6 +7013,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1006712595}
     m_Modifications:
+    - target: {fileID: 5135765267003923943, guid: c1f3b12e4404fc54b95136ff2eea3a0d, type: 3}
+      propertyPath: brush.brushScale
+      value: 0.0015
+      objectReference: {fileID: 0}
     - target: {fileID: 5135765267003923948, guid: c1f3b12e4404fc54b95136ff2eea3a0d, type: 3}
       propertyPath: m_RootOrder
       value: 34
