@@ -20,13 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Green1Room1.unity
     guid: 1cc469a4a8c6e1a4eb2d0256920aa3db
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Green2Room1.unity
     guid: 5fa5251235d4f1344ab61038c35c608a
   - enabled: 1
     path: Assets/Scenes/Green3Room1.unity
     guid: d3e1d27f90fab1942bb6c64e2531e6d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pink3Room1.unity
     guid: 9983b449e82228747905a38c90026dfa
   - enabled: 1
