@@ -3296,7 +3296,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.4180678, y: 1.7578106, z: 1.7440001}
+  m_ConnectedAnchor: {x: -1.4180678, y: 1.7499444, z: 1.7258607}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -10825,7 +10825,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.15390325, y: 1.7511802, z: 1.7440001}
+  m_ConnectedAnchor: {x: -0.15390325, y: 1.7436465, z: 1.7237877}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -11214,7 +11214,7 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
@@ -11228,7 +11228,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 108
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -11254,7 +11254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985815089}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0.237, y: 1.301, z: 1.363}
+  m_LocalPosition: {x: 0.456, y: 1.301, z: 1.363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
