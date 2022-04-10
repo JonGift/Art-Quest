@@ -6175,6 +6175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1006712595}
     m_Modifications:
+    - target: {fileID: 5580947755546497989, guid: 8f16098331be39f4692e6ec45a87bc2c, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 03a7fbde941cfc3408bf1455e1693516, type: 2}
     - target: {fileID: 7494673626587432878, guid: 8f16098331be39f4692e6ec45a87bc2c, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6293,6 +6297,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6382539355653849697, guid: 2204b8c57d4b32b48969489cf839b79f, type: 3}
+--- !u!114 &1784163636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784163634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fff89cdfbbcaa24cbae8518c257b75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quality: 0.645
 --- !u!1 &1792331158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8492,6 +8509,7 @@ GameObject:
   - component: {fileID: 637429382881531115}
   - component: {fileID: 637429382881531114}
   - component: {fileID: 637429382881531113}
+  - component: {fileID: 637429382881531116}
   m_Layer: 8
   m_Name: chair_Low
   m_TagString: Untagged
@@ -8783,6 +8801,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.720171, y: 2.6018987, z: 16.202364}
   m_Center: {x: -0.4768428, y: 1.46375, z: -0.09458647}
+--- !u!114 &637429382881531116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637429382881531107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fff89cdfbbcaa24cbae8518c257b75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quality: 0.35
 --- !u!1 &802877854799294377
 GameObject:
   m_ObjectHideFlags: 0
@@ -8952,7 +8983,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637429382881531107}
-  m_Mesh: {fileID: 1276475449324014011, guid: 247ba0c2847d24065b4f815e13b0926d, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 982b222e70c399c418c959557e4e09c8, type: 2}
 --- !u!1 &939209149239262400
 GameObject:
   m_ObjectHideFlags: 0
