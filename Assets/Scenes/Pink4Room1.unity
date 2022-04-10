@@ -1505,7 +1505,10 @@ MonoBehaviour:
   - {fileID: 821517676218984880, guid: 13d223d85eb7d674c93c80bec011d96f, type: 3}
   - {fileID: 3623869559016940505, guid: bd9f998fd4a40244583153bc958e40d4, type: 3}
   target: {fileID: 0}
-  frequency: 8
+  frequency: 7
+  speedIncrease: 0.85
+  cap: 0.4
+  speedReducer: 0.85
 --- !u!4 &359199116
 Transform:
   m_ObjectHideFlags: 0
