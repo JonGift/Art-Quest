@@ -5282,6 +5282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1032084289}
     m_Modifications:
+    - target: {fileID: 3456931192641243090, guid: 5a4dd325237877f4c8bbe3154a85557a, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 128275ca89d836345a2733c8f2184172, type: 2}
     - target: {fileID: 3456931192642378706, guid: 5a4dd325237877f4c8bbe3154a85557a, type: 3}
       propertyPath: m_Name
       value: sofa_2
@@ -5372,6 +5376,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: dcf42730cff08ee4d9652da48fce238a, type: 3}
+--- !u!114 &837321245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837321243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fff89cdfbbcaa24cbae8518c257b75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quality: 0.5
 --- !u!1 &845620413
 GameObject:
   m_ObjectHideFlags: 0
