@@ -399,11 +399,8 @@ MonoBehaviour:
   - {fileID: 8544212940089379099}
   - {fileID: 1578291171}
   clips:
-  - {fileID: 8300000, guid: a2d6964698b384ce9bff0da1817ccfbc, type: 3}
-  - {fileID: 8300000, guid: 5687dc3d8776143ccbf0c41bd0c649f0, type: 3}
-  - {fileID: 8300000, guid: 85e4d242dc0764c83aae71f2fd8be91b, type: 3}
-  - {fileID: 8300000, guid: 7cd8ef69d3e41453db2370151269b0d8, type: 3}
-  - {fileID: 8300000, guid: ddb185c6040344fb3ab5b40605507121, type: 3}
+  - {fileID: 8300000, guid: 8ac693c203cf240d5a7a3501126c5d7b, type: 3}
+  - {fileID: 8300000, guid: f9058b8808d26437788dff1807a51cef, type: 3}
   clipIndex: 0
   joint: {fileID: 530844946}
 --- !u!114 &62224029
